@@ -1,5 +1,14 @@
 # Changelog — KoolDots
 
+## v2.3.25
+
+## Fixed:
+
+- Disabled LayerRule for swaync
+  - Caused execessive blurring of background
+- WindowRule for `qcalculate-gtk`
+  - Had same rule as `gnome-calculator` needed own sizing
+
 ## v2.3.24
 
 ## Fixed:
