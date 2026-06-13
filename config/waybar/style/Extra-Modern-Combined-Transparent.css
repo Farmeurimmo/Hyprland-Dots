@@ -36,8 +36,9 @@
 * {
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-	min-height: 0;  
+	min-height: 0;
     /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+    /* NOTE: Waybar v14+ ignores % font-size values */
     font-size: 99%;
     font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
@@ -49,6 +50,8 @@ window#waybar {
 	padding-bottom: 0px;
 	padding-right: 4px;
 	padding-left: 4px;
+    /* Waybar scaling: adjust font-size to scale the bar */
+    font-size: 14px;
 }
 
 tooltip {
@@ -153,6 +156,7 @@ tooltip {
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
+#custom-hypr_layout,
 #custom-menu,
 #custom-playerctl,
 #custom-power_vertical,
@@ -170,7 +174,7 @@ tooltip {
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default, 
+#custom-weather.default,
 #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
@@ -193,7 +197,7 @@ tooltip {
 }
 
 #custom-hint {
-	color: @peach;
+    color: @peach;
 	padding-right: 6px;
 	padding-left: 6px;
 }
@@ -207,7 +211,7 @@ tooltip {
 }
 
 #battery.critical:not(.charging) {
-	color: #f53c3c;
+    color: #f53c3c;
 	animation-name: blink;
 	animation-duration: 3.0s;
 	animation-timing-function: steps(12);
@@ -217,7 +221,7 @@ tooltip {
 
 #pulseaudio-slider,
 #pulseaudio {
-	color: @foreground;
+    color: @foreground;
 }
 
 #backlight-slider slider,
@@ -255,14 +259,14 @@ tooltip {
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default, 
+#custom-weather.default,
 #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	color: @lavender;
+    color: @lavender;
 	padding-right: 6px;
 	padding-left: 6px;
 }
@@ -270,12 +274,12 @@ tooltip {
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
     border-bottom: 8px solid rgba(0, 0, 0, 0.2);
 }
 
 #clock {
-	color: @sapphire;
+    color: @sapphire;
     border-radius: 15px;
 }
 
@@ -285,3 +289,27 @@ tooltip {
 
 #custom-swaync{
     color: #ffd700;}
+
+/* --- tray readability override (global) --- */
+#tray > *,
+#tray > .passive,
+#tray > .active,
+#tray > .needs-attention {
+  background: rgba(137, 180, 250, 0.55);
+  border-radius: 8px;
+  border: 1px solid rgba(17, 17, 27, 0.35);
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: rgba(17, 17, 27, 0.98);
+  -gtk-icon-effect: none;
+}
+
+#tray image {
+  background: transparent;
+  color: rgba(17, 17, 27, 0.98);
+  -gtk-icon-style: symbolic;
+  -gtk-icon-effect: none;
+  opacity: 1;
+}

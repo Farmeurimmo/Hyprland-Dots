@@ -8,6 +8,7 @@
 	font-family: "JetBrainsMono Nerd Font";
 	font-weight: bold;
 	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	/* NOTE: Waybar v14+ ignores % font-size values */
 	font-size: 99%;
     min-height: 0;
 }
@@ -25,6 +26,8 @@ window#waybar {
     color: @foreground;
     padding-left: 15px;
     padding-right: 15px;
+    /* Waybar scaling: adjust font-size to scale the bar */
+    font-size: 14px;
 }
 
 window#waybar.empty,
@@ -32,6 +35,8 @@ window#waybar.empty #window {
     background-color: transparent;
     padding: 0px;
     border: 0px;
+    /* Waybar scaling: adjust font-size to scale the bar */
+    font-size: 14px;
 }
 
 tooltip {
@@ -126,6 +131,7 @@ tooltip {
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
+#custom-hypr_layout,
 #custom-menu,
 #custom-playerctl,
 #custom-power_vertical,
@@ -357,4 +363,28 @@ tooltip {
     background-color: @background;
     color: @color15;
     border: 2px solid @color13;
+}
+
+/* --- tray readability override (global) --- */
+#tray > *,
+#tray > .passive,
+#tray > .active,
+#tray > .needs-attention {
+  background: rgba(137, 180, 250, 0.55);
+  border-radius: 8px;
+  border: 1px solid rgba(17, 17, 27, 0.35);
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: rgba(17, 17, 27, 0.98);
+  -gtk-icon-effect: none;
+}
+
+#tray image {
+  background: transparent;
+  color: rgba(17, 17, 27, 0.98);
+  -gtk-icon-style: symbolic;
+  -gtk-icon-effect: none;
+  opacity: 1;
 }

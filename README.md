@@ -61,18 +61,21 @@ Automated Hyprland Scripts for Distro of choice which will pull this dotfiles if
 
 - [Arch-Linux](https://github.com/LinuxBeginnings/Arch-Hyprland)
 
-- [OpenSUSE(Tumbleweed)](https://github.com/LinuxBeginnings/OpenSuse-Hyprland)
+- [Fedora-Linux (43/44//Rawhide)](https://github.com/LinuxBeginnings/Fedora-Hyprland)
 
-- [Fedora-Linux (43/Rawhide)](https://github.com/LinuxBeginnings/Fedora-Hyprland)
-
-- [Debian-Linux (Trixie & SID)](https://github.com/LinuxBeginnings/Debian-Hyprland)
+- [Debian-Linux (Trixie,Testing,SID)](https://github.com/LinuxBeginnings/Debian-Hyprland)
 
 - [NixOS (25.05+)](https://github.com/LinuxBeginnings/NixOS-Hyprland)
 
 - [Ubuntu 24.04 LTS](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/24.04)
-- [Ubuntu 24.10 (deprecated)](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/24.10)
-- [Ubuntu 25.04 (deprecated)](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/25.04)
-- [Ubuntu 25.10](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/25.10)
+- [Ubuntu 26.04 LTS](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/26.04)
+
+- No longer supported
+
+  - [OpenSUSE(Tumbleweed)](https://github.com/LinuxBeginnings/OpenSuse-Hyprland)
+  - [Ubuntu 24.10 (deprecated)](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/24.10)
+  - [Ubuntu 25.04 (deprecated)](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/25.04)
+  - [Ubuntu 25.10 (deprecated )](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/25.10)
 
 ---
 
@@ -99,6 +102,7 @@ Automated Hyprland Scripts for Distro of choice which will pull this dotfiles if
   > If you already have a hyprland configuration, uninstall it first, or create a new user, and install it with that user
 
 > To download from main branch
+
 - Clone this repo by using `git`.
 - Change directory, i.e. `cd Arch-Hyprland`
 - Make `install.sh` executable `chmod +x ./install.sh`
@@ -156,13 +160,20 @@ chmod +x copy.sh
 ### ✍️ Contributing
 
 - If you have improvements on the dotfiles or configuration, feel free to submit a PR for improvement.
+    - Pull Requests (PRs) must be submitted against the `development` branch! 
+    - Those submitted against the `main` branch will be closed 
+    - The `main` branch is only for fully tested code 
+       - Your change might work fine for your distro but not for the others we support 
 - I always welcome improvements as I am also just learning just like you guys!
+
 - Click [`HERE`](https://github.com/LinuxBeginnings/Hyprland-Dots/blob/main/CONTRIBUTING.md) for a guide how to contribute
 
 > Thanks to all who have contributed code, or support on the Discord server. Your efforts are greatly appreciated
 
 ### 🔮 Discord Server
+
 - Want to contribute? Click [`HERE`](https://github.com/LinuxBeginnings/Hyprland-Dots/blob/main/CONTRIBUTING.md) for a guide how to contribute
+
   > Thanks to all who have contributed code, or support on the Discord server. You efforts are greatly appreciated
 
 - kindly join my [Discord](https://discord.gg/RZJgC7KAKm)
@@ -171,6 +182,7 @@ chmod +x copy.sh
 
 - a Star on my Github repos would be nice 🌟
 - Subscribe to my Youtube Channel [YouTube](https://www.youtube.com/@LinuxBeginnings)
+   > Note:  Videos coming soon to the YouTube channel!  
 
 ## 🫰 Thank you for the stars 🩷
 
